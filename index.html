@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SPA China</title>
+    <link href="css/index.css" rel="stylesheet">
+    <style type="text/css">
+
+        #Box
+        {
+            width: 776px;
+            border: 1px solid black;
+            margin: 0px auto;
+        }
+
+        #top-nav
+        {
+           background: url("image/bigpic.jpg")no-repeat;
+            height: 337px;
+        }
+        #top-nav ul
+        {
+            float: right;
+            /*margin-right: 20px;*/
+        }
+        #top-nav ul li
+        {
+
+            display: table-cell;
+            vertical-align: middle;
+        }
+        #top-nav ul li a
+        {
+             display: block;
+             color: white;
+             text-align: center;
+            padding-left: 10px;
+            padding-right: 20px;
+        }
+
+
+        #top-nav ul li a:hover
+        {
+            color: magenta;
+            cursor: pointer;
+        }
+
+        #top-nav ul li .dropDown a:hover
+        {
+            color: black;
+            text-decoration: underline;
+        }
+
+        .dropDown
+        {
+            position: relative;
+            display: inline-block;
+
+        }
+
+        .dropDown-content
+        {
+            background-color: #661912;
+            position: absolute;
+            display: none;
+            margin-top: 2px;
+        }
+        #top-nav ul li .dropDown-content a
+        {
+            margin-top: 10px;
+            color: orange;
+            font-size: 13px;
+        }
+
+        #top-nav ul li .dropDown-content a:hover
+        {
+            color: white;
+            background-color: #810F0E;
+            text-decoration: underline;
+        }
+
+
+        #top-nav ul li .dropDown ul li
+        {
+            display: inline-block;
+        }
+        .dropDown:hover .dropDown-content
+        {
+            display: inline-block;
+        }
+
+        #content
+        {
+            width: 776px;
+            /*height: 350px;*/
+            background-color: white;
+        }
+
+        .downLine
+        {
+            width: 100%;
+            height: 5px;
+            background-color: #420E17;
+            /*float: inherit;*/
+            display: inline-block;
+            margin-top: 6px;
+            margin-bottom: 0.6px;
+        }
+        .yellow-content
+        {
+            background-color: #E9EA8F;
+            width: 100%;
+            height: 514px;
+        }
+
+        .left-content
+        {
+            margin-top: 20px;
+            margin-left: 20px;
+            float: left;
+            height: 450px;
+            width: 220px;
+            background-color: #ECEEB5;
+            border: 1px solid white;
+        }
+        .left-title-content
+        {
+            background-color: white;
+            /*float: left;*/
+            height: 25px;
+
+        }
+        .left-title-img
+        {
+            float: left;
+        }
+        .left-title
+        {
+            height: 25px;
+            line-height: 25px;
+            font-size: 15px;
+        }
+
+        /*#content p*/
+        /*{*/
+            /*display: inline-block;*/
+        /*}*/
+        .entry-img {float: left; margin-top: 10px}
+        .entry-name{display: inline-block; text-align: center; width: 108px;height: 41px;margin-top:30px}
+
+       .entry-content{display: inline-block; text-indent: 2em;margin-top: 10px;text-decoration: underline;font-size: 0.8em; color: purple}
+       .entry-content:hover{color: #323232;}
+
+        .right-title-content{background-color: white;width: 490px;height: 28px;margin-top: 20px;margin-left: 10px}
+        .right-title-img{float: left;}
+        .right-title{height: 28px;line-height: 28px;}
+        .imageGallery{margin-top: 10px}
+
+        .imageGallery ul li
+        {
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+
+        .right-content
+        {
+            display: inline-block;
+            /*background-color: aqua;*/
+            margin-left: 20px;
+            width: 500px;
+            height: 450px;
+            margin-top: 20px;
+        }
+
+        .abountSAP-left{width: 230px;height: 270px;float: left; margin-left: 10px}
+        /*.abountSAP-lef{height: 20px;line-height: 20px;}*/
+        .abountSAP-left-img{float: left;width: 88px;height: 150px;}
+        .abountSAP-left-content{font-size: 13px;text-indent: 2em;width: 142px;height: 150px;display: inline-block;margin-top: 20px;}
+        .abountSAP-right{width: 230px;height: 270px;display: inline-block;margin-left: 10px;}
+
+
+        #footer
+        {
+            background-color: #AB2B45;
+            width: 778px;
+            margin: 0px auto;
+        }
+
+        #footer ul
+        {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        #footer p
+        {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        #footer ul li
+        {
+            display: inline-block;
+
+        }
+
+        #footer ul li a
+        {
+            font-size: 15px;
+            color: cadetblue;
+            text-decoration: underline;
+        }
+
+        #footer ul li a:hover
+        {
+            cursor: pointer;
+            color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="Box">
+    <!--导航-->
+    <div id="top-nav">
+
+        <ul>
+            <li><a href="#">Spa新闻</a></li>
+            <li><img src="image/topxian.jpg"></li>
+
+            <li>
+                <div class="dropDown">
+                <a href="#">Spa企业</a>
+                    <ul class="dropDown-content">
+                        <li class="main-li2"><a  href="/">自然美</a></li>
+                        <li class="main-li2"><a  href="/">养生堂</a></li>
+                    </ul>
+
+                </div>
+            </li>
+
+            <li><img src="image/topxian.jpg"></li>
+            <li>
+                <div class="dropDown">
+                    <a rel="#">Spa文化</a>
+
+                    <ul class="dropDown-content">
+                        <li class="main-li2"><a href="/">文化廊</a></li>
+                        <li class="main-li2"><a  href="/">香薰池</a></li>
+                    </ul>
+
+                </div>
+
+            </li>
+
+
+            <li><img src="image/topxian.jpg"></li>
+            <li><a href="#">Spa培训</a></li>
+            <li><img src="image/topxian.jpg"></li>
+            <li><a href="#">Spa产品</a></li>
+            <li><img src="image/topxian.jpg"></li>
+            <li><a href="#">Spa论谈</a></li>
+        </ul>
+    </div>
+
+
+    <!--内容-->
+    <div id="content">
+        <!--黄色背景-->
+        <div class="yellow-content">
+          <!--左边-->
+            <div class="left-content">
+
+            <div class="left-title-content">
+                <img class="left-title-img" src="image/ltitlekuai.jpg">
+                <p class="left-title">SPA项目介绍</p>
+            </div>
+
+               <img  class="entry-img" src="image/3.jpg">
+                <p class="entry-name">四季之美 <br />
+                    (120分钟疗程)</p>
+
+                 <a class="entry-content" href="#">以取自中国天然草本精华精炼而成的乳液去除全身死皮细胞，使肌肤重现青春活力。再加以适当的按摩帮助血液循环，恢复平衡。</a>
+
+                <img  class="entry-img" src="image/4.jpg">
+                <p class="entry-name">舒缓系列 <br />
+                    (60分钟)</p>
+
+                <a class="entry-content" href="#">淡紫色的薰衣草花香清甜，有怡神、静心、平衡情绪、促进皮肤细胞再生等作用。平和系列特别针对精神状态烦躁不稳定者，有助于安抚其低落的情绪，澄清纷乱的思绪。</a>
+            </div>
+
+
+            <!--右边-->
+            <div class="right-content">
+
+            <div class="abountSPA-content">
+
+                <div class="abountSAP-left">
+                    <p abountSAP-left-title>SPA简介</p>
+                    <img  class="xian" src="image/xian.jpg">
+                    <img class="abountSAP-left-img" src="image/5.jpg">
+                    <p class="abountSAP-left-content">SPA就是人们利用矿泉水治疗疾病或改善健康状况，是予防医学的一种，它教人如何爱惜主命，探寻心灵的平衡，追求一种内在的平静，达到身、心、灵的健康.</p>
+                    <a class="entry-content">SPA女子会所，一直在努力营造一个全方位、多功能、自然的纯美私人享受空间；努力打造一所享受生活、雕塑美丽的皇家御宫，从而让美容院不仅仅是美容院！</a>
+                </div>
+                <div class="abountSAP-right">
+                    <p abountSAP-left-title>关于SPA女子会所</p>
+                    <img  class="xian" src="image/xian.jpg">
+                    <img class="abountSAP-left-img" src="image/6.jpg">
+                    <p class="abountSAP-left-content">随着美容业的不断发展，及美容高科技时代的到来，SPA女子会所还推出了面部冷疗，玉疗，水晶疗法等结合的身体养生项目。多类别仪器针对顾客不同需求与问题，结合</p>
+                    <a class="entry-content">美体SPA护肤用品，进行科学专业的搭配，设计出适合每位顾客的个性化疗程，让您感受身心完全放松的肌肤艺术，体验前所未有的美容效果。</a>
+                </div>
+                </div>
+                <div class="right-title-content">
+                    <img class="right-title-img" src="image/ltitlekuai.jpg">
+                    <p class="right-title">SPA项目介绍</p>
+                </div>
+                <div class="imageGallery">
+                    <ul>
+                        <li><a href="#"><img src="image/7.jpg"></a></li>
+                        <li><a href="#"><img src="image/8.jpg"></a></li>
+                        <li><a href="#"><img src="image/9.jpg"></a></li>
+                        <li><a href="#"><img src="image/10.jpg"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="spa-image"></div>
+
+
+            </div>
+
+
+        </div>
+        <div class="downLine"></div>
+    </div>
+
+
+    <!--脚部链接+版权信息-->
+    <div id="footer">
+        <ul>
+            <li><a href="#">关于我们</a></li>
+            <li><span>|</span></li>
+            <li><a href="#">网站地图</a></li>
+            <li><span>|</span></li>
+            <li><a href="#">芳香美容</a></li>
+            <li><span>|</span></li>
+            <li><a href="#">水疗会所</a></li>
+            <li><span>|</span></li>
+            <li><a href="#">水疗中心</a></li>
+            <li><span>|</span></li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+
+        <p>CopyRight 2007-2009@SpaChina.All Rights Reserved</p>
+    </div>
+
+</div>
+
+</body>
+</html>
